@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+                                    Ideias para Buffet:
+
+
+tela inicial --luan
+
+Sobre nós --luan
+Galeria do buffet --luan
+**** Escolha de Eventos **** -
+Parceiros buffet (Dj, Barmen, plataformas, parceiros) --leo
+**** Link Informações(Instagram, Google, Formulário ZAP) **** --leo
+
+Rodapé + Marca d'água
+=======
+                                    Ideias para Buffet:
+
+
+tela inicial --luan
+
+Sobre nós --luan
+Galeria do buffet --luan
+**** Escolha de Eventos **** -
+Parceiros buffet (Dj, Barmen, plataformas, parceiros) --leo
+**** Link Informações(Instagram, Google, Formulário ZAP) **** --leo
+
+Rodapé + Marca d'água
+>>>>>>> b374c10 (BN 0.05)

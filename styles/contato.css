@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em 1rem;
+  background: linear-gradient(135deg, rgba(14, 68, 32, 0.7), rgba(14, 68, 32, 0.4));
+  backdrop-filter: blur(8px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  flex: 1 1 auto;
+  min-width: 100px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 0.8rem;
+  padding: 0;
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  position: relative;
+  font-weight: 500;
+}
+
+.navbar .nav-links li a:hover {
+  color: #00ff88;
+  transform: translateY(-2px);
+}
+
+.navbar .nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #00ff88;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-links li a:hover::after {
+  width: 100%;
+}
+
+.btn-contato {
+  background: linear-gradient(45deg, #28a745, #34d058);
+  font-weight: 600;
+  border-radius: 6px;
+  margin-left: 1rem;
+  box-shadow: 0 2px 6px rgba(40, 167, 69, 0.3);
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-contato:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
+}
+
+.contact-container {
+  display: flex;
+  min-height: calc(100vh - 100px); /* Ajusta para descontar navbar e footer */
+  margin-top: 60px; /* Espaço para a navbar fixa */
+}
+
+.image-section {
+  flex: 1;
+  background: url('../assets/imagens/espacocentral.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.form-section {
+  flex: 1;
+  background-color: #fff9e6; /* Branco meio amarelado */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form .input-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.contact-form .btn-submit {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form .btn-submit:hover {
+  background-color: #218838;
+}
+
+.rodape {
+  margin-top: auto; /* Push footer to bottom */
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .image-section,
+  .form-section {
+    flex: none;
+    height: 300px;
+  }
+}

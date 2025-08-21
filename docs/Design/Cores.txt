@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+Verde escuro: #0E4420
+Verde Claro: #287D41
+Amarelo borda:
+Claro #E9DC8F
+Escuro: #F2CD5E
+Fundo preto: #0D0D0D
+=======
+Verde escuro: #0E4420
+Verde Claro: #287D41
+Amarelo borda:
+Claro #E9DC8F
+Escuro: #F2CD5E
+Fundo preto: #0D0D0D
+>>>>>>> b374c10 (BN 0.05)
