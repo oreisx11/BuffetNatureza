@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardápio | Buffet Natureza</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <style>
+    .cardapio-section {
+      max-width: 1500px;
+      margin: 0 auto;
+      margin-top: 5vh;
+      padding: 20px 20px;
+      background: #f4f3f3;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+      text-align: center;
+    }
+    .cardapio-section h1 {
+  font-family: "Playfair Display", serif;
+  color: #0e4420;
+  font-size: 3.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #0e4420;
+  display: inline-block;
+  padding-bottom: 5px;
+    }
+    .grid-cardapio {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+    .card-comida {
+      /* background: #0e4420; */
+      border-radius: 12px;
+      /* border:2px solid  #28a745; */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      padding: 2rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: transform 0.2s;
+      min-height: 180px;
+    }
+    .card-comida:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 6px 18px rgba(40,167,69,0.13);
+    }
+    .card-comida h2 {
+      font-size: 1.3rem;
+      color: #28a745;
+      margin-bottom: 0.6rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .card-comida p {
+      font-size: 1rem;
+      color: #333;
+      font-family: "Lora", serif;
+      margin: 0;
+      text-align: left;
+    }
+    @media (max-width: 1024px) {
+      .grid-cardapio {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .grid-cardapio {
+        grid-template-columns: 1fr;
+      }
+      .cardapio-section {
+        padding: 20px 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ------------- NAV-BAR ------------- -->
+  <nav class="navbar">
+    <!-- Parte 2: Links sempre visíveis -->
+    <ul class="nav-links">
+      <li><a href="/index.html">Início</a></li>
+      <li><a href="#link-sobre">Sobre</a></li>
+      <li><a href="/pages/cardapio.html">Cardapio</a></li>
+      <li><a href="#link-servicos">Eventos</a></li>
+      <li><a href="pages/galeria.html">Galeria</a></li>
+      <li><a href="pages/contato.html" class="btn-contato">Orçamento</a></li>
+    </ul>
+  </nav>
+  <br>
+
+    <section class="cardapio-section">
+      <h1>Nosso Cardápio</h1>
+      <div class="grid-cardapio">
+        <div class="card-comida">
+          <h2>Salada Tropical</h2>
+          <p>Mix de folhas frescas, frutas da estação, nozes e molho especial da casa.</p>
+        </div>
+        <div class="card-comida">
+          <h2>Risoto de Cogumelos</h2>
+          <p>Arroz arbório cremoso com cogumelos frescos, parmesão e toque de vinho branco.</p>
+        </div>
+        <div class="card-comida">
+          <h2>Filé ao Molho Madeira</h2>
+          <p>Filé mignon grelhado servido com molho madeira e acompanhamentos especiais.</p>
+        </div>
+        <div class="card-comida">
+          <h2>Frango ao Curry</h2>
+          <p>Peito de frango ao molho curry suave, arroz branco e legumes salteados.</p>
+        </div>
+        <div class="card-comida">
+          <h2>Quiche de Alho-Poró</h2>
+          <p>Quiche artesanal de massa leve recheada com alho-poró e queijo cremoso.</p>
+        </div>
+        <div class="card-comida">
+          <h2>Escondidinho de Carne Seca</h2>
+          <p>Purê de mandioca com carne seca desfiada e gratinado com queijo coalho.</p>
+        </div>
+        <div class="card-comida">
+          <h2>Moqueca Vegetariana</h2>
+          <p>Moqueca de legumes ao leite de coco, azeite de dendê e arroz de coco.</p>
+        </div>
+        <div class="card-comida">
+          <h2>Penne ao Pesto</h2>
+          <p>Macarrão penne ao molho pesto de manjericão, nozes e parmesão.</p>
+        </div>
+      </div>
+    </section>
+
+</body>
+</html>
