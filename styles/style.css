@@ -1035,3 +1035,123 @@ border: 2px solid #e0f2e0;
     align-items: center;
   }
 }
+
+.contact-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/imagens/cafebuffet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.form-section {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(40, 167, 69, 0.10);
+  padding: 2.5rem 2rem;
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.orcamento-titulo {
+  font-family: "Playfair Display", serif;
+  color: #28a745;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  border-bottom: 3px solid #28a745;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.contact-text p {
+  text-align: center;
+  color: #444;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.form-box {
+  width: 100%;
+}
+
+#contactForm {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  color: #1a5628;
+  margin-bottom: 0.4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #cbead1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f8f8f8;
+  color: #222;
+  transition: border 0.2s;
+  font-family: "Nunito", sans-serif;
+  resize: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #28a745;
+  outline: none;
+  background: #f4fff7;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.9rem 0;
+  background: linear-gradient(90deg, #28a745 60%, #34d058 100%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.10);
+}
+
+.btn-submit:hover {
+  background: linear-gradient(90deg, #218838 60%, #28a745 100%);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.required {
+  color: #e74c3c;
+  margin-left: 2px;
+  font-size: 1.1em;
+}
+
+@media (max-width: 600px) {
+  .form-section {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .orcamento-titulo {
+    font-size: 1.5rem;
+  }
+}
